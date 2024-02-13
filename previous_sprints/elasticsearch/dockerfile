@@ -1,0 +1,8 @@
+# Set the base image.
+FROM elasticdump/elasticsearch-dump
+
+COPY . .
+
+RUN chmod 777 ./wait-for-it.sh
+
+RUN chmod 777 ./elastic-init.sh
